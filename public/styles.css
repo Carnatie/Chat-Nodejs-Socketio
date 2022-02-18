@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: rgb(0, 0, 20);
   }
   
   * {
@@ -7,39 +8,79 @@ html, body {
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  .allbox {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+
+  .input-messagebox {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    width: 600px;
+  }
+
   #chat {
     height: 100%;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   
-  input {
+  .input-username {
     width: 600px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px 20px 0px 0px;
     height: 50px;
     padding: 0 20px;
     font-size: 14px;
   }
-  
-  button {
+
+  .input-message {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
     width: 600px;
     height: 50px;
+    padding: 20px;
     font-size: 14px;
-    background: rgb(7, 47, 66);
+    border: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-radius: 0px 0px 0px 20px;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-left-width: 0;
+    border-radius: 0px 0px 20px 0px;
+    font-size: 14px;
+    background: rgb(185, 185, 185);
     text-align: center;
-    line-height: 50px;
     font-weight: bold;
-    color: #FFF;
-    margin-top: 10px;
+    color: rgb(0, 0, 0);
+  }
+
+  button:hover {
+    cursor: pointer;
   }
   
   .messages {
     width: 600px;
     height: 400px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
+    margin-bottom: -38px;
+    border: 1px solid rgb(0, 0, 0);
     padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   }
